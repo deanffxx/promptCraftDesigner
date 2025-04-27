@@ -1,0 +1,89 @@
+#root {
+  min-width: 1280px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* 内容区居中和最大宽度 */
+.ant-layout-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
+  min-height: 80vh;
+  box-shadow: 0 2px 8px #f0f1f2;
+  border-radius: 8px;
+  padding: 32px 24px;
+}
+
+/* 侧边栏样式优化 */
+.ant-layout-sider {
+  min-width: 200px !important;
+  max-width: 240px;
+  background: #f8f9fa !important;
+}
+
+/* 响应式布局 */
+@media (max-width: 900px) {
+  .ant-layout-content {
+    padding: 16px 4px;
+    min-width: 0;
+  }
+  .ant-layout-sider {
+    min-width: 60px !important;
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ant-layout-content {
+    padding: 4px 0;
+    min-width: 0;
+  }
+  .ant-layout-sider {
+    display: none;
+  }
+}
+
+/* 输入框和文本域的placeholder颜色为淡灰色 */
+input::placeholder, textarea::placeholder, .ant-input::placeholder, .ant-input-textarea::placeholder {
+  color: #b0b6be !important;
+  opacity: 1;
+}
